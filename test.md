@@ -262,11 +262,36 @@ for (let i = 10; i >= 2; i--) {
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
 - ¿Qué es un array?
+
+    Es una lista de elementos
+
+
 - ¿Qué es un objeto?
+
+    Es una lista de elementos PERO cada elemento tiene un nomrbre clave.
+    
+```
+const obj = {
+    nombre = "auvm",
+    edad = 13
+};
+```
+
 - ¿Cuándo es mejor usar objetos o arrays?
+
+    arrays cuando lo que haremos en un elemento es lo mismo que en todos los demás.
+
+    un objeto cuando los nombres de cada elemento y diferenciarlos son importantes.
+
+
+
 - ¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
 
+    si, un objeto puede contener arrays y viceversa.
+
 ### 2️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
+
+    
 
 ### 3️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
 
