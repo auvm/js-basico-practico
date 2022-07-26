@@ -199,6 +199,38 @@ switch (tipoDeSuscripcion) {
 
 > 💡 Bonus: si ya eres una experta o experto en el lenguaje, te desafío a comentar cómo replicar este comportamiento con arrays y un solo condicional. 😏
 
+```
+
+let tipoDeSuscripcion = {
+    free: "Solo puedes tomar los cursos gratis",
+    basic: "Puedes tomar casi todos los cursos de Platzi durante un mes",
+    expert: "Puedes tomar casi todos los cursos de Platzi durante un año",
+    expertPlus: "Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año",
+};
+
+function conseguirTiposDeSuscripcion(suscripcion){
+    if(tipoDeSuscripcion[suscripcion]){
+        console.log(tipoDeSuscripcion[suscripcion]);
+        return;
+    }
+    console.warn('Ese tipo de suscripción no exite');
+}
+```
+//Mi versión anterior- no muy buena
+const tipoDeSuscripcion = "Basic";
+var planes = [{tipo: "Free", leyenda: "Solo puedes tomar los cursos gratis"},
+              {tipo: "Basic", leyenda: "Puedes tomar casi todos los cursos de Platzi durante un mes"},
+              {tipo: "Expert", leyenda: "Puedes tomar casi todos los cursos de Platzi durante un año"},
+              {tipo: "ExpertPlus", leyenda: "Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año"}];
+function validacion(tipo, planes){
+    for(var plan of planes){
+        if(tipo === plan.tipo){
+            console.log(plan.leyenda);
+        }
+    }
+}
+validacion(tipoDeSuscripcion, planes);
+Puedes tomar casi todos los cursos de Platzi durante un mes
 
 ## Ciclos
 
@@ -297,7 +329,22 @@ const obj = {
 
 ### 4️⃣ Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
 
+```
+let obj = {
+    nombre: "auvm",
+    edad: 22,
+    altura: 1.68
+};
+Object.values(obj)
 
+function valoresDeObjeto(obj){
+    let arr = Object.values(obj);
+    for(let elemento of arr){
+        console.log(elemento);
+    }
+}
+
+```
 ## ¿Cómo te fue? 🏆
 
 **¡Felicidades por completar la prueba de JavaScript!** Confío en que hayas completado cada paso y hayas pausado para repasar los temas de los ejercicios que se te complicaron.
