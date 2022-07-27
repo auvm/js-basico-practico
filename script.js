@@ -1,1 +1,20 @@
-console.log("Hello, World!");
+const h1 = document.querySelector('h1');
+const p = document.querySelector('p');
+const parrafito = document.getElementsByClassName('.parrafito');
+const pid = document.getElementById('#pid');
+const input = document.querySelector('input');
+
+console.log(h1);
+
+console.log({
+    h1,
+    p, 
+    parrafito,
+    pid,
+    input
+});
+
+input.value = "mierda";
+
+h1.innerHTML = "Otro texto <br/>";
+h1.innerText = 'Otro texto seguido <br/>';
